@@ -1,0 +1,190 @@
+PROMPT:
+Estou criando uma base de dados para um cardápio de uma loja online de marmitas personalizáveis.
+
+Crie uma lista de objetos JavaScript com as seguintes variáveis:
+- tipo: Descrição do alimento
+- valorEnergetico: Quantidade de energia (calorias) em 100 gramas do alimento.
+- precoPorKg: Valor em reais para adquirir 1 quilograma do alimento.
+
+com 15 tipos de preparo da categoria carboidratos. Utilize 6 ingredientes básicos mais consumidos no Brasil.
+
+RESULTADO
+const carboidratosBrasil = [
+    // Arroz
+    { tipo: 'Arroz branco cozido', valorEnergetico: 130, precoPorKg: 15 },
+    { tipo: 'Arroz integral cozido', valorEnergetico: 110, precoPorKg: 20 },
+    { tipo: 'Arroz com brócolis', valorEnergetico: 120, precoPorKg: 22 },
+
+    // Feijão
+    { tipo: 'Feijão carioca tropeiro', valorEnergetico: 150, precoPorKg: 25 },
+    { tipo: 'Feijão preto refogado', valorEnergetico: 140, precoPorKg: 22 },
+
+    // Macarrão
+    { tipo: 'Macarrão integral ao molho de tomate', valorEnergetico: 135, precoPorKg: 23 },
+    { tipo: 'Macarrão com legumes salteados', valorEnergetico: 120, precoPorKg: 20 },
+
+    // Batata
+    { tipo: 'Purê de batata', valorEnergetico: 100, precoPorKg: 18 },
+    { tipo: 'Batata doce assada', valorEnergetico: 80, precoPorKg: 15 },
+
+    // Mandioca
+    { tipo: 'Purê de mandioca', valorEnergetico: 110, precoPorKg: 18 },
+    { tipo: 'Farofa de mandioca', valorEnergetico: 120, precoPorKg: 20 },
+
+    // Milho
+    { tipo: 'Cuscuz paulista', valorEnergetico: 160, precoPorKg: 25 },
+    { tipo: 'Pamonha salgada', valorEnergetico: 180, precoPorKg: 30 },
+
+    // Outros
+    { tipo: 'Polenta cremosa', valorEnergetico: 140, precoPorKg: 22 },
+    { tipo: 'Tapioca com recheio de queijo', valorEnergetico: 150, precoPorKg: 25 }
+];
+
+
+PROMPT:
+Crie uma lista de objetos JavaScript com as seguintes variáveis:
+- tipo: Descrição do alimento
+- valorEnergetico: Quantidade de energia (calorias) em 100 gramas do alimento.
+- precoPorKg: Valor em reais para adquirir 1 quilograma do alimento.
+
+com 15 tipos de preparos da categoria proteínas, sendo 3 receita com carne bovina, 3 com carne de frango, 3 com carne suína, 3 com ovos e 3 com peixes.
+
+RESULTADO
+const proteinas = [
+  // Carne Bovina
+  { tipo: 'Bife grelhado', valorEnergetico: 250, precoPorKg: 40 },
+  { tipo: 'Strogonoff de carne', valorEnergetico: 280, precoPorKg: 50 },
+  { tipo: 'Carne moída refogada', valorEnergetico: 240, precoPorKg: 35 },
+
+  // Carne de Frango
+  { tipo: 'Peito de frango grelhado', valorEnergetico: 165, precoPorKg: 30 },
+  { tipo: 'Frango desfiado', valorEnergetico: 190, precoPorKg: 35 },
+  { tipo: 'Coxa e sobrecoxa assada', valorEnergetico: 210, precoPorKg: 25 },
+
+  // Carne Suína
+  { tipo: 'Lombo suíno grelhado', valorEnergetico: 260, precoPorKg: 38 },
+  { tipo: 'Bisteca suína', valorEnergetico: 245, precoPorKg: 32 },
+  { tipo: 'Pernil assado desfiado', valorEnergetico: 220, precoPorKg: 30 },
+
+  // Ovos
+  { tipo: 'Ovo mexido', valorEnergetico: 140, precoPorKg: 20 },
+  { tipo: 'Ovo cozido', valorEnergetico: 155, precoPorKg: 22 },
+  { tipo: 'Omelete', valorEnergetico: 160, precoPorKg: 25 },
+
+  // Peixes
+  { tipo: 'Salmão grelhado', valorEnergetico: 205, precoPorKg: 60 },
+  { tipo: 'Atum em lata', valorEnergetico: 180, precoPorKg: 50 },
+  { tipo: 'Tilápia grelhada', valorEnergetico: 175, precoPorKg: 45 }
+];
+
+
+PROMPT:
+
+RESULTADO
+
+---
+
+PROMPT:
+Crie uma lista de objetos JavaScript com as seguintes variáveis:
+- tipo: Descrição do alimento
+- valorEnergetico: Quantidade de energia (calorias) em 100 gramas do alimento.
+- precoPorKg: Valor em reais para adquirir 1 quilograma do alimento.
+
+com 15 tipos de preparos da categoria grãos e leguminosas. Utilize 5 variedades mais consumidas no Brasil como base do preparo.
+
+RESULTADO
+const graosLeguminosasBrasil = [
+    // Feijão Carioca
+    { tipo: 'Feijão carioca tropeiro', valorEnergetico: 150, precoPorKg: 25 },
+    { tipo: 'Feijão carioca com couve', valorEnergetico: 140, precoPorKg: 22 },
+    { tipo: 'Feijão carioca com linguiça', valorEnergetico: 180, precoPorKg: 28 },
+    
+    // Arroz
+    { tipo: 'Arroz integral com brócolis', valorEnergetico: 120, precoPorKg: 20 },
+    { tipo: 'Arroz com lentilha e cenoura', valorEnergetico: 135, precoPorKg: 23 },
+    { tipo: 'Arroz carreteiro', valorEnergetico: 170, precoPorKg: 27 },
+
+    // Lentilha
+    { tipo: 'Lentilha com legumes', valorEnergetico: 145, precoPorKg: 25 },
+    { tipo: 'Lentilha com arroz integral', valorEnergetico: 130, precoPorKg: 22 },
+
+    // Grão de Bico
+    { tipo: 'Hummus (grão de bico com tahine)', valorEnergetico: 200, precoPorKg: 35 },
+    { tipo: 'Salada de grão de bico com tomate e cebola', valorEnergetico: 125, precoPorKg: 20 },
+
+    // Milho
+    { tipo: 'Cuscuz paulista', valorEnergetico: 160, precoPorKg: 25 },
+    { tipo: 'Pamonha salgada', valorEnergetico: 180, precoPorKg: 30 },
+
+    // Outros Grãos
+    { tipo: 'Quinoa com legumes salteados', valorEnergetico: 155, precoPorKg: 28 },
+    { tipo: 'Trigo para quibe', valorEnergetico: 170, precoPorKg: 26 }
+];
+
+---
+
+PROMPT:
+Crie uma lista de objetos JavaScript com as seguintes variáveis:
+- tipo: Descrição do alimento
+- valorEnergetico: Quantidade de energia (calorias) em 100 gramas do alimento.
+- precoPorKg: Valor em reais para adquirir 1 quilograma do alimento.
+
+com 15 tipos de preparos da categoria guarnição. Utilize preparos a base de verduras e legumes mais comuns no Brasil.
+
+RESULTADO
+const guarnicoes = [
+    // Batata
+    { tipo: 'Batata doce assada com alecrim', valorEnergetico: 80, precoPorKg: 15 },
+    { tipo: 'Purê de batata doce com leite de coco', valorEnergetico: 110, precoPorKg: 20 },
+
+    // Legumes
+    { tipo: 'Brócolis no vapor com azeite', valorEnergetico: 35, precoPorKg: 12 },
+    { tipo: 'Repolho roxo refogado', valorEnergetico: 30, precoPorKg: 10 },
+    { tipo: 'Abobrinha refogada com tomate', valorEnergetico: 25, precoPorKg: 10 },
+
+    // Saladas
+    { tipo: 'Salada verde com tomate e cebola', valorEnergetico: 20, precoPorKg: 8 },
+    { tipo: 'Salada Caesar', valorEnergetico: 40, precoPorKg: 15 },
+
+    // Legumes Assados
+    { tipo: 'Mix de legumes assados (abobrinha, berinjela, pimentão)', valorEnergetico: 35, precoPorKg: 12 },
+
+    // Outros
+    { tipo: 'Arroz com brócolis', valorEnergetico: 120, precoPorKg: 20 }, // Considerando como guarnição por ser leve
+    { tipo: 'Purê de mandioquinha', valorEnergetico: 100, precoPorKg: 18 },
+    { tipo: 'Chuchu cozido', valorEnergetico: 25, precoPorKg: 8 },
+    { tipo: 'Quiabo refogado', valorEnergetico: 30, precoPorKg: 10 },
+    { tipo: 'Espinafre refogado', valorEnergetico: 35, precoPorKg: 12 }
+];
+
+---
+
+PROMPT:
+
+Crie uma lista de objetos JavaScript com as seguintes variáveis:
+- tipo: Descrição do alimento
+- valorEnergetico: Quantidade de energia (calorias) em 100 gramas do alimento.
+- precoPorKg: Valor em reais para adquirir 1 quilograma do alimento.
+
+com 15 tipos de preparos da categoria saladas. Utilize preparos somente com vegetais, in natura ou cozidos no vapor.
+
+RESULTADO
+const saladas = [
+    { tipo: 'Salada verde com tomate e cebola', valorEnergetico: 20, precoPorKg: 8 },
+    { tipo: 'Salada Caesar (sem frango)', valorEnergetico: 40, precoPorKg: 15 },
+    { tipo: 'Salada caprese', valorEnergetico: 50, precoPorKg: 20 },
+    { tipo: 'Salada de rúcula com parmesão', valorEnergetico: 35, precoPorKg: 12 },
+    { tipo: 'Salada de quinoa com legumes salteados', valorEnergetico: 120, precoPorKg: 25 },
+    { tipo: 'Salada de lentilha com vegetais', valorEnergetico: 130, precoPorKg: 22 },
+    { tipo: 'Salada de repolho roxo com cenoura ralada', valorEnergetico: 30, precoPorKg: 10 },
+    { tipo: 'Salada de beterraba cozida com queijo branco', valorEnergetico: 60, precoPorKg: 18 },
+    { tipo: 'Salada de abóbora assada com especiarias', valorEnergetico: 55, precoPorKg: 16 },
+    { tipo: 'Salada de brócolis com nozes', valorEnergetico: 45, precoPorKg: 15 },
+    { tipo: 'Salada de pepino com iogurte natural', valorEnergetico: 30, precoPorKg: 10 },
+    { tipo: 'Salada de tomate cereja com manjericão', valorEnergetico: 25, precoPorKg: 8 },
+    { tipo: 'Salada de agrião com laranja', valorEnergetico: 35, precoPorKg: 12 },
+    { tipo: 'Salada de espinafre com morango', valorEnergetico: 40, precoPorKg: 15 },
+    { tipo: 'Salada de couve com chips de batata doce', valorEnergetico: 50, precoPorKg: 18 }
+];
+
+
