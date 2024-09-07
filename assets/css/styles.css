@@ -15,7 +15,7 @@
 --color-theme5: #333333;/* (cinza escuro)*/
 --color-gray1:#595959;
 --color-gray2:#999999;
---color-gray3:#d9d9d9;
+--color-gray3:#f1f1e0;
 
 --fnt-titulo: "Poetsen One", sans-serif;
 --fnt-corpo: "Open Sans", sans-serif;
@@ -25,6 +25,11 @@ body{
     min-height: 100vh;
     font-family: var(--fnt-corpo);
     font-weight: 400;
+    /* background-image: url(../imagens/bg-amarelo-comidas.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: var(--color-gray3);
     
 }
 
@@ -113,11 +118,12 @@ p .bold{
 
 .cardapio__item{
     display: flex;
-    background-color: #d9d9d9;
+    background-color: var(--color-theme4);
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 0.5rem 0 0;
     width: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .cardapio__item input{
@@ -127,11 +133,12 @@ p .bold{
 .cardapio__item label{
     display: flex;
     align-items: center;
+    gap: 1rem;
     width: 100%;
 }
 
 .cardapio__item label img{
-    width: 4rem;
+    width: 5.5rem;
 }
 
 .cardapio__item h3{
@@ -148,7 +155,7 @@ p .bold{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #d9d9d9;
+    background-color: var(--color-theme4);
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 0.5rem 0 4rem;
