@@ -1,181 +1,268 @@
 const marmitas = [
   {
+    marmitaEmbalagem:"Embalagem P",
     marmitaPeso: 450,
-    marmitaValor: 44.90,
+    marmitaValor: "R$44,90",
     marmitaId: "marmita450"
   },
   {
+    marmitaEmbalagem:"Embalagem M",
     marmitaPeso: 600,
-    marmitaValor: 57.90,
+    marmitaValor: "R$57,90",
     marmitaId: "marmita600"
   },
   {
+    marmitaEmbalagem:"Embalagem G",
     marmitaPeso: 750,
-    marmitaValor: 69.90,
+    marmitaValor: "R$69,90",
     marmitaId: "marmita750"
   }
 ];
 
 const carboidratos = [
   {
-    tipo: "Arroz Branco",
-    valorEnergetico: 350,
-    itemId: "arrozBranco"
+    tipo: "Arroz branco cozido",
+    ingredientes: "Arroz",
+    valorEnergetico: 130,
+    itemId: "arrozBrancoCozido"
   },
   {
-    tipo: "Arroz Integral",
-    valorEnergetico: 350,
-    itemId: "arrozInt"
+    tipo: "Arroz integral cozido",
+    ingredientes: "Arroz integral",
+    valorEnergetico: 110,
+    itemId: "arrozIntegralCozido"
   },
   {
-    tipo: "Feijão Carioca",
-    valorEnergetico: 340,
-    itemId: "feijaoCarioca"
+    tipo: "Feijão preto cozido",
+    ingredientes: "Feijão preto",
+    valorEnergetico: 120,
+    itemId: "feijaoPretoCozido"
   },
   {
-    tipo: "Lentilha",
-    valorEnergetico: 300,
-    itemId: "lentilha"
+    tipo: "Macarrão espaguete cozido",
+    ingredientes: "Macarrão",
+    valorEnergetico: 160,
+    itemId: "macarraoEspagueteCozido"
   },
   {
-    tipo: "Grão de bico",
-    valorEnergetico: 360,
-    itemId: "graoDeBico"
+    tipo: "Batata doce assada",
+    ingredientes: "Batata doce",
+    valorEnergetico: 90,
+    itemId: "batataDoceAssada"
   },
   {
-    tipo: "Macarrão Integral",
-    valorEnergetico: 330,
-    itemId: "macarraoInt"
+    tipo: "Mandioca cozida",
+    ingredientes: "Mandioca",
+    valorEnergetico: 140,
+    itemId: "mandiocaCozida"
   },
   {
-    tipo: "Macarrão de Arroz",
-    valorEnergetico: 320,
-    itemId: "macarraoArroz"
+    tipo: "Milho verde cozido",
+    ingredientes: "Milho",
+    valorEnergetico: 100,
+    itemId: "milhoVerdeCozido"
+  },{
+    tipo: "Arroz integral com legumes",
+    ingredientes: "Arroz integral, Cenoura, Chuchu e Ervilha",
+    valorEnergetico: 125,
+    itemId: "arrozIntegralComLegumes"
   },
   {
-    tipo: "Batata Doce",
-    valorEnergetico: 86, // Valor aproximado para batata doce cozida
-    itemId: "batataDoce"
+    tipo: "Macarrão integral ao molho de tomate",
+    ingredientes: "Macarrão integral, Tomate, Cebola e Alho",
+    valorEnergetico: 150,
+    itemId: "macarraoIntegralMolhoTomate"
   },
   {
-    tipo: "Inhame",
-    valorEnergetico: 103, // Valor aproximado para inhame cozido
-    itemId: "inhame"
+    tipo: "Batata doce recheada com carne",
+    ingredientes: "Batata doce, Carne moída, Cebola, Alho",
+    valorEnergetico: 180,
+    itemId: "batataDoceRecheadaCarne"
   },
   {
-    tipo: "Mandioca",
-    valorEnergetico: 112, // Valor aproximado para mandioca cozida
-    itemId: "mandioca"
+    tipo: "Purê de mandioca com queijo",
+    ingredientes: "Mandioca, Queijo",
+    valorEnergetico: 155,
+    itemId: "pureMandiocaQueijo"
+  },
+  {
+    tipo: "Cuscuz marroquino com legumes",
+    ingredientes: "Cuscuz marroquino, Cenoura, Abobrinha, Pimentão",
+    valorEnergetico: 130,
+    itemId: "cuscuzMarroquinoLegumes"
+  },
+  {
+    tipo: "Nhoque de batata doce com molho pesto",
+    ingredientes: "Batata doce, Farinha de arroz, Manjericão, Pinoli",
+    valorEnergetico: 160,
+    itemId: "nhoqueBatataDocePesto"
+  },
+  {
+    tipo: "Polenta cremosa com ragu de carne",
+    ingredientes: "Milho, Carne moída, Tomate, Vinho tinto",
+    valorEnergetico: 190,
+    itemId: "polentaRaguCarne"
+  },
+  {
+    tipo: "Arroz carreteiro com carne seca",
+    ingredientes: "Arroz, Carne seca desfiada, Feijão, Couve",
+    valorEnergetico: 175,
+    itemId: "arrozCarreteiroCarneSeca"
   }
 ];
 
 const proteinas = [
   {
-    tipo: "Frango Grelhado",
-    valorEnergetico: 165,
-    itemId: "frangoGrelhado"
-  },
-  {
-    tipo: "Peito de Peru Assado",
-    valorEnergetico: 170,
-    itemId: "peitoPeru"
-  },
-  {
-    tipo: "Filé de Frango Empanado",
-    valorEnergetico: 190,
-    itemId: "fileFrangoEmpanado"
-  },
-  {
-    tipo: "Bife Magro Grelhado",
+    tipo: "Bife de carne bovina grelhado",
+    ingredientes: "Carne bovina",
     valorEnergetico: 250,
-    itemId: "bifeMagroGrelhado"
+    itemId: "bifeCarneBovinaGrelhado"
   },
   {
-    tipo: "Lombo Suíno Grelhado",
-    valorEnergetico: 245,
-    itemId: "lomboSuino"
+    tipo: "Frango grelhado com temperos",
+    ingredientes: "Frango, Alho, Sal, Pimenta",
+    valorEnergetico: 190,
+    itemId: "frangoGrelhadoTemperos"
   },
   {
-    tipo: "Salmão Grelhado",
-    valorEnergetico: 205,
-    itemId: "salmaoGrelhado"
+    tipo: "Lombo de porco assado",
+    ingredientes: "Lombo de porco",
+    valorEnergetico: 240,
+    itemId: "lomboPorcoAssado"
   },
   {
-    tipo: "Atum Ralado",
-    valorEnergetico: 185,
-    itemId: "atumRalado"
+    tipo: "Salmão grelhado com limão",
+    ingredientes: "Salmão, Limão",
+    valorEnergetico: 200,
+    itemId: "salmaoGrelhadoLimao"
   },
   {
-    tipo: "Ovos Mexidos",
-    valorEnergetico: 145,
+    tipo: "Ovos mexidos",
+    ingredientes: "Ovos, Leite, Sal",
+    valorEnergetico: 150,
     itemId: "ovosMexidos"
   },
   {
-    tipo: "Ovos Cozidos",
-    valorEnergetico: 155,
-    itemId: "ovosCozidos"
+    tipo: "Bife de soja grelhado",
+    ingredientes: "Proteína de soja",
+    valorEnergetico: 220,
+    itemId: "bifeSojaGrelhado"
   },
   {
-    tipo: "Tofu Grelhado",
+    tipo: "Lentilhas cozidas",
+    ingredientes: "Lentilhas",
+    valorEnergetico: 120,
+    itemId: "lentilhasCozidas"
+  },
+  {
+    tipo: "Grão de bico cozido",
+    ingredientes: "Grão de bico",
+    valorEnergetico: 140,
+    itemId: "graoBicoCozido"
+  },
+  {
+    tipo: "Tofu grelhado com legumes",
+    ingredientes: "Tofu, Cenoura, Pimentão",
+    valorEnergetico: 180,
+    itemId: "tofuGrelhadoLegumes"
+  },
+  {
+    tipo: "Carne moída bovina refogada com legumes",
+    ingredientes: "Carne moída bovina, Cebola, Cenoura, Pimentão",
+    valorEnergetico: 230,
+    itemId: "carneMoidaBovinaLegumes"
+  },
+  {
+    tipo: "Peito de frango desfiado",
+    ingredientes: "Peito de frango",
+    valorEnergetico: 180,
+    itemId: "peitoFrangoDesfiado"
+  },
+  {
+    tipo: "Atum em lata light no azeite",
+    ingredientes: "Atum em lata",
     valorEnergetico: 195,
-    itemId: "tofuGrelhado"
+    itemId: "atumLataAzeite"
   },
   {
-    tipo: "Proteína Texturizada de Soja (PTS)",
-    valorEnergetico: 380, // Valor aproximado, pode variar de acordo com a marca e preparo
-    itemId: "pts"
+    tipo: "Omelete com queijo e presunto",
+    ingredientes: "Ovos, Queijo, Presunto",
+    valorEnergetico: 170,
+    itemId: "omeleteQueijoPresunto"
+  },
+  {
+    tipo: "Hambúrguer vegetariano",
+    ingredientes: "Proteína de soja texturizada, Legumes",
+    valorEnergetico: 200,
+    itemId: "hamburguerVegetariano"
+  },
+  {
+    tipo: "Quinoa cozida com legumes",
+    ingredientes: "Quinoa, Tomate, Pepino",
+    valorEnergetico: 130,
+    itemId: "quinoaLegumes"
   }
 ];
 
-const vegetais = [
+const guarnicoes = [
   {
-      tipo: "Alface Americana em Folhas",
-      valorEnergetico: 15,
-      itemId: "alfaceAmericana"
+    tipo: "Salada verde com tomate e cebola",
+    ingredientes: "Alface, Tomate, Cebola",
+    valorEnergetico: 30,
+    itemId: "saladaVerdeTomateCebola"
   },
   {
-      tipo: "Rúcula",
-      valorEnergetico: 25,
-      itemId: "rucula"
+    tipo: "Legumes salteados (brócolis, cenoura, pimentão)",
+    ingredientes: "Brócolis, Cenoura, Pimentão",
+    valorEnergetico: 45,
+    itemId: "legumesSalteados"
   },
   {
-      tipo: "Espinafre Cozido no Vapor",
-      valorEnergetico: 23,
-      itemId: "espinafreCozido"
+    tipo: "Arroz integral com brócolis",
+    ingredientes: "Arroz integral, Brócolis",
+    valorEnergetico: 120,
+    itemId: "arrozIntegralBrocolis"
   },
   {
-      tipo: "Brócolis Cozido no Vapor",
-      valorEnergetico: 34,
-      itemId: "brocolisCozido"
+    tipo: "Batata doce assada com ervas finas",
+    ingredientes: "Batata doce, Ervas finas",
+    valorEnergetico: 90,
+    itemId: "batataDoceAssadaErvas"
   },
   {
-      tipo: "Cenoura Cozida no Vapor",
-      valorEnergetico: 41,
-      itemId: "cenouraCozida"
+    tipo: "Purê de batata com alho",
+    ingredientes: "Batata, Alho",
+    valorEnergetico: 100,
+    itemId: "pureBatataAlho"
   },
   {
-      tipo: "Salada de Repolho Roxo com Cenoura Ralada",
-      valorEnergetico: 28,
-      itemId: "saladaRepolhoCenoura"
+    tipo: "Salada de quinoa com legumes",
+    ingredientes: "Quinoa, Pepino, Tomate, Cebola",
+    valorEnergetico: 110,
+    itemId: "saladaQuinoaLegumes"
   },
   {
-      tipo: "Refogado de Brócolis com Alho",
-      valorEnergetico: 40,
-      itemId: "refogadoBrocolisAlho"
+    tipo: "Legumes no vapor (chuchu, abobrinha, cenoura)",
+    ingredientes: "Chuchu, Abobrinha, Cenoura",
+    valorEnergetico: 35,
+    itemId: "legumesVapor"
   },
   {
-      tipo: "Abobrinha Refogada com Tomate",
-      valorEnergetico: 27,
-      itemId: "abobrinhaRefogada"
+    tipo: "Arroz branco com ervilha",
+    ingredientes: "Arroz branco, Ervilha",
+    valorEnergetico: 130,
+    itemId: "arrozBrancoErvilha"
   },
   {
-      tipo: "Salada Caprese (Tomate, Manjericão e Muçarela)",
-      valorEnergetico: 180, // Valor aproximado, pode variar dependendo das quantidades e tipo de queijo
-      itemId: "saladaCaprese"
+    tipo: "Mandioca cozida",
+    ingredientes: "Mandioca",
+    valorEnergetico: 140,
+    itemId: "mandiocaCozida"
   },
   {
-      tipo: "Mix de Folhas Verdes (Alface, Rúcula, Espinafre)",
-      valorEnergetico: 20,
-      itemId: "mixFolhasVerdes"
+    tipo: "Mix de folhas verdes (rúcula, alface americana, espinafre)",
+    ingredientes: "Rúcula, Alface americana, Espinafre",
+    valorEnergetico: 25,
+    itemId: "mixFolhasVerdes"
   }
 ];

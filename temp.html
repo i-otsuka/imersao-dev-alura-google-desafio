@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamarmita! Delivery de Marmitas</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho__container">
+        <h1 class="cabecalho__titulo">Mamarmita!</h1>
+    </header>
+    <main class="principal__container">
+        <!-- Categoria Embalagem -->
+        <section class="cardapio__container">
+            <h2>Escolha o tamanho da sua Mamarmita:</h2>
+            <div class="cardapio__lista">
+                <div class="cardapio__item">
+                    <input type="radio" name="embalagem" id="marmita450" value="Embalagem P">
+                    <label for="marmita450">
+                        <h3>Embalagem P</h3>
+                        <p><span class="bold"></span>Peso: 450g</p>
+                        <p><span class="bold"></span>Preço: R$44.90</p>
+                    </label>
+                </div>
+            </div>
+            <!-- Botão avançar para proximo item-->
+            <button class="botao">Carboidratos ></button>
+        </section>
+
+        <!-- Categoria Carboidrato -->
+        <section class="cardapio__container">
+            <h2>Carboidratos</h2>
+            <!-- Campo pesquisa  -->
+            <div class="cardapio__pesquisa">
+                <input type="text" name="pesquisa-carboidrato" id="pesquisa-carboidrato"
+                    placeholder="Digite seu carboidrato ou ingrediente">
+                <button class="botao">Pesquisar</button>
+            </div>
+            <!-- Campo lista  -->
+            <div class="cardapio__lista">
+                <div class="cardapio__item">
+                    <input type="radio" name="carboidratos" id="arrozBrancoCozido" value="Arroz branco cozido">
+                    <label for="arrozBrancoCozido">
+                        <h3>Arroz branco cozido</h3>
+                        <p><span class="bold">Ingredientes:</span> Arroz</p>
+                        <p><span class="bold">Calorias(para cada 100g):</span> 130kcal</p>
+                    </label>
+                </div>
+            </div>
+            <!-- Botão avançar para proximo item-->
+            <button class="botao">Proteína ></button>
+        </section>
+
+        <!-- Categoria Proteína -->
+        <section class="cardapio__container">
+            <h2>Proteína</h2>
+
+            <!-- Campo pesquisa  -->
+            <div class="cardapio__pesquisa">
+                <input type="text" name="pesquisa-carboidrato" id="pesquisa-proteina"
+                    placeholder="Digite sua proteína ou ingrediente">
+                <button class="botao">Pesquisar</button>
+            </div>
+
+            <!-- Campo lista  -->
+            <div class="cardapio__lista">
+                <div class="cardapio__item">
+                    <input type="radio" name="carboidratos" id="arrozBrancoCozido" value="Arroz branco cozido">
+                    <label for="arrozBrancoCozido">
+                        <h3>Arroz branco cozido</h3>
+                        <p><span class="bold">Ingredientes:</span> Arroz</p>
+                        <p><span class="bold">Calorias(para cada 100g):</span> 130kcal</p>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Botão avançar para proximo item-->
+            <button class="botao">Guarnições ></button>
+        </section>
+
+        <!-- Categoria Guarnição -->
+        <section class="cardapio__container">
+            <h2>Guarnição</h2>
+
+            <!-- Campo pesquisa  -->
+            <div class="cardapio__pesquisa">
+                <input type="text" name="pesquisa-guarnicao" id="pesquisa-guarnicao"
+                    placeholder="Digite sua guarnição ou ingrediente">
+                <button class="botao">Pesquisar</button>
+            </div>
+
+            <!-- Campo lista  -->
+            <div class="cardapio__lista">
+                <div class="cardapio__item">
+                    <input type="radio" name="carboidratos" id="arrozBrancoCozido" value="Arroz branco cozido">
+                    <label for="arrozBrancoCozido">
+                        <h3>Arroz branco cozido</h3>
+                        <p><span class="bold">Ingredientes:</span> Arroz</p>
+                        <p><span class="bold">Calorias(para cada 100g):</span> 130kcal</p>
+                    </label>
+                </div>
+            </div>
+            <!-- Botão avançar para proximo item-->
+            <button class="botao">Fechar Mamarmita ></button>
+        </section>
+
+        <section class="cardapio__container">
+            <h2>Revise sua Mamarmita</h2>
+            <div class="pedido__container">
+                <img src="./assets/imagens/icone-package-01.svg" alt="Imagem marmita">
+                <div>
+                <h3>Marmita P - 450g</h3>
+                <p>Preço: R$44.90</p>
+                <h3>Itens:</h3>
+                <ul>
+                    <li>
+                        <h4>Carboidrato</h4>
+                        <p>Item carboidrato</p>
+                    </li>
+                    <li>
+                        <h4>Proteína</h4>
+                        <p>Item proteína</p>
+                    </li>
+                    <li>
+                        <h4>Guarinição</h4>
+                        <p>Item guarnição</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!-- Botão avançar para proximo item-->
+            <button class="botao">Ir para pagamento ></button>
+        </section>
+
+    </main>
+    <footer class="rodape__container">
+        <div class="rodape__texto">
+            <p><strong>Desafio Imersão DEV_ Alura e Gemini Google Brasil</strong></p>
+            <p>Isac R. Otsuka 2024</p>
+        </div>
+    </footer>
+    <script src="./assets/js/dados.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
