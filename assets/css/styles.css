@@ -123,8 +123,15 @@ p .bold{
 .cardapio__item input{
     margin: 0 1rem;
 }
+
 .cardapio__item label{
+    display: flex;
+    align-items: center;
     width: 100%;
+}
+
+.cardapio__item label img{
+    width: 4rem;
 }
 
 .cardapio__item h3{

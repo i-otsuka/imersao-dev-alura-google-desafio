@@ -15,9 +15,12 @@ for (let marmita of marmitas) {
         <div class="cardapio__item">
             <input type="radio" name="embalagem_radio" id="${marmita.marmitaId}" value="${marmita.marmitaEmbalagem}">
             <label for="${marmita.marmitaId}">
+                <img src="./assets/imagens/${marmita.marmitaId}.svg" alt="Imagem marmita">
+                <div>
                 <h3>${marmita.marmitaEmbalagem}</h3>
-                <p><span class="bold"></span>Peso: ${marmita.marmitaPeso}/p>
+                <p><span class="bold"></span>Peso: ${marmita.marmitaPeso}g</p>
                 <p><span class="bold"></span>Preço: ${marmita.marmitaValor}</p>
+                </div>
             </label>
         </div>    
     `
@@ -29,7 +32,7 @@ printPagina = `
         ${printLista}
     </div>
     <!-- Botão avançar para proximo item-->
-    <button class="botao botao__avancar" onclick="selecionaEmbalagem()">Carboidratos ></button>
+    <button class="botao__avancar" onclick="selecionaEmbalagem()">Carboidratos ></button>
 `
 secaoPagina.innerHTML = printPagina;
 
@@ -60,9 +63,12 @@ function paginaCarboidrato() {
                 <div class="cardapio__item">
                     <input type="radio" name="carboidrato_radio" id="${carboidrato.itemId}" value="${carboidrato.tipo}">
                     <label for="${carboidrato.itemId}">
+                        <img src="./assets/imagens/icon-1-carboidrato.svg" alt="carboidratos">
+                        <div>
                         <h3>${carboidrato.tipo}</h3>
                         <p><span class="bold">Ingredientes:</span> ${carboidrato.ingredientes}</p>
                         <p><span class="bold">Calorias(para cada 100g):</span> ${carboidrato.valorEnergetico}kcal</p>
+                        </div>
                     </label>
                 </div> 
     `
@@ -82,7 +88,7 @@ function paginaCarboidrato() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao botao__avancar" onclick="selecionaCarboidrato()">Proteína ></button>
+            <button class="botao__avancar" onclick="selecionaCarboidrato()">Proteína ></button>
         </section>
     `
     secaoPagina.innerHTML = printPagina;
@@ -110,9 +116,12 @@ function pesquisaCarboidrato() {
                 <div class="cardapio__item">
                     <input type="radio" name="carboidrato_radio" id="${carboidrato.itemId}" value="${carboidrato.tipo}">
                     <label for="${carboidrato.itemId}">
+                        <img src="./assets/imagens/icon-1-carboidrato.svg" alt="carboidratos">
+                        <div>
                         <h3>${carboidrato.tipo}</h3>
                         <p><span class="bold">Ingredientes:</span> ${carboidrato.ingredientes}</p>
                         <p><span class="bold">Calorias(para cada 100g):</span> ${carboidrato.valorEnergetico}kcal</p>
+                        </div>
                     </label>
                 </div> 
             `
@@ -134,7 +143,7 @@ function pesquisaCarboidrato() {
         ${printLista}
     </div>
     <!-- Botão avançar para proximo item-->
-    <button class="botao botao__avancar" onclick="selecionaCarboidrato()">Proteína ></button>
+    <button class="botao__avancar" onclick="selecionaCarboidrato()">Proteína ></button>
 </section>
 `
     if (!printLista) {
@@ -173,9 +182,12 @@ function paginaProteina() {
                 <div class="cardapio__item">
                     <input type="radio" name="proteina_radio" id="${proteina.itemId}" value="${proteina.tipo}">
                     <label for="${proteina.itemId}">
+                        <img src="./assets/imagens/icone-3-proteina.svg" alt="Proteínas">
+                        <div>
                         <h3>${proteina.tipo}</h3>
                         <p><span class="bold">Ingredientes:</span> ${proteina.ingredientes}</p>
                         <p><span class="bold">Calorias(para cada 100g):</span> ${proteina.valorEnergetico}kcal</p>
+                        </div>
                     </label>
                 </div> 
     `
@@ -195,7 +207,7 @@ function paginaProteina() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao botao__avancar" onclick="selecionaProteina()">Guarnição ></button>
+            <button class="botao__avancar" onclick="selecionaProteina()">Guarnição ></button>
         </section>
     `
     secaoPagina.innerHTML = printPagina;
@@ -223,9 +235,12 @@ function pesquisaProteina() {
                 <div class="cardapio__item">
                     <input type="radio" name="proteina_radio" id="${proteina.itemId}" value="${proteina.tipo}">
                     <label for="${proteina.itemId}">
+                        <img src="./assets/imagens/icone-3-proteina.svg" alt="Proteínas">
+                        <div>
                         <h3>${proteina.tipo}</h3>
                         <p><span class="bold">Ingredientes:</span> ${proteina.ingredientes}</p>
                         <p><span class="bold">Calorias(para cada 100g):</span> ${proteina.valorEnergetico}kcal</p>
+                        </div>
                     </label>
                 </div> 
             `
@@ -247,7 +262,7 @@ function pesquisaProteina() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao botao__avancar" onclick="selecionaProteina()">Guarnição ></button>
+            <button class="botao__avancar" onclick="selecionaProteina()">Guarnição ></button>
         </section>
 `
     if (!printLista) {
@@ -286,9 +301,12 @@ function paginaGuarnicao() {
                 <div class="cardapio__item">
                     <input type="radio" name="guarnicao_radio" id="${guarnicao.itemId}" value="${guarnicao.tipo}">
                     <label for="${guarnicao.itemId}">
+                        <img src="./assets/imagens/icone-4-guarnicao.svg" alt="Guarnição">
+                        <div>
                         <h3>${guarnicao.tipo}</h3>
                         <p><span class="bold">Ingredientes:</span> ${guarnicao.ingredientes}</p>
                         <p><span class="bold">Calorias(para cada 100g):</span> ${guarnicao.valorEnergetico}kcal</p>
+                        </div>
                     </label>
                 </div> 
     `
@@ -308,7 +326,7 @@ function paginaGuarnicao() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao botao__avancar" onclick="selecionaGuarnicao()">Fechar Mamarmita ></button>
+            <button class="botao__avancar" onclick="selecionaGuarnicao()">Fechar Mamarmita ></button>
         </section>
     `
     secaoPagina.innerHTML = printPagina;
@@ -336,9 +354,12 @@ function pesquisaGuarnicao() {
                 <div class="cardapio__item">
                     <input type="radio" name="guarnicao_radio" id="${guarnicao.itemId}" value="${guarnicao.tipo}">
                     <label for="${guarnicao.itemId}">
+                        <img src="./assets/imagens/icone-4-guarnicao.svg" alt="Guarnição">
+                        <div>
                         <h3>${guarnicao.tipo}</h3>
                         <p><span class="bold">Ingredientes:</span> ${guarnicao.ingredientes}</p>
                         <p><span class="bold">Calorias(para cada 100g):</span> ${guarnicao.valorEnergetico}kcal</p>
+                        </div>
                     </label>
                 </div> 
             `
@@ -360,7 +381,7 @@ function pesquisaGuarnicao() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao botao__avancar" onclick="selecionaGuarnicao()">Fechar Mamarmita ></button>
+            <button class="botao__avancar" onclick="selecionaGuarnicao()">Fechar Mamarmita ></button>
         </section>
 `
     if (!printLista) {
@@ -425,7 +446,7 @@ function paginaFechaMarmita() {
             </div>
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao" onclick="pagamento()">Ir para pagamento ></button>
+            <button class="botao__avancar" onclick="pagamento()">Ir para pagamento ></button>
     `;
     secaoPagina.innerHTML = printPagina;
 }
@@ -441,7 +462,7 @@ function pagamento(){
         <h3>Obrigado volte sempre!</h3>
         <br>
         <br>
-        <button class="botao" onclick="window.location.reload()">Fazer novo pedido</button>
+        <button class="botao__avancar" onclick="window.location.reload()">Fazer novo pedido</button>
     `;
     secaoPagina.innerHTML = printPagina;
 }

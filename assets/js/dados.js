@@ -119,6 +119,18 @@ const proteinas = [
     itemId: "bifeCarneBovinaGrelhado"
   },
   {
+    tipo: "Carne moída bovina refogada com legumes",
+    ingredientes: "Carne moída bovina, Cebola, Cenoura, Pimentão",
+    valorEnergetico: 230,
+    itemId: "carneMoidaBovinaLegumes"
+  },
+  {
+    tipo: "Peito de frango desfiado",
+    ingredientes: "Peito de frango",
+    valorEnergetico: 180,
+    itemId: "peitoFrangoDesfiado"
+  },
+  {
     tipo: "Frango grelhado com temperos",
     ingredientes: "Frango, Alho, Sal, Pimenta",
     valorEnergetico: 190,
@@ -137,10 +149,22 @@ const proteinas = [
     itemId: "salmaoGrelhadoLimao"
   },
   {
+    tipo: "Atum em lata light no azeite",
+    ingredientes: "Atum em lata",
+    valorEnergetico: 195,
+    itemId: "atumLataAzeite"
+  },
+  {
     tipo: "Ovos mexidos",
     ingredientes: "Ovos, Leite, Sal",
     valorEnergetico: 150,
     itemId: "ovosMexidos"
+  },
+  {
+    tipo: "Omelete com queijo e presunto",
+    ingredientes: "Ovos, Queijo, Presunto",
+    valorEnergetico: 170,
+    itemId: "omeleteQueijoPresunto"
   },
   {
     tipo: "Bife de soja grelhado",
@@ -165,30 +189,6 @@ const proteinas = [
     ingredientes: "Tofu, Cenoura, Pimentão",
     valorEnergetico: 180,
     itemId: "tofuGrelhadoLegumes"
-  },
-  {
-    tipo: "Carne moída bovina refogada com legumes",
-    ingredientes: "Carne moída bovina, Cebola, Cenoura, Pimentão",
-    valorEnergetico: 230,
-    itemId: "carneMoidaBovinaLegumes"
-  },
-  {
-    tipo: "Peito de frango desfiado",
-    ingredientes: "Peito de frango",
-    valorEnergetico: 180,
-    itemId: "peitoFrangoDesfiado"
-  },
-  {
-    tipo: "Atum em lata light no azeite",
-    ingredientes: "Atum em lata",
-    valorEnergetico: 195,
-    itemId: "atumLataAzeite"
-  },
-  {
-    tipo: "Omelete com queijo e presunto",
-    ingredientes: "Ovos, Queijo, Presunto",
-    valorEnergetico: 170,
-    itemId: "omeleteQueijoPresunto"
   },
   {
     tipo: "Hambúrguer vegetariano",
