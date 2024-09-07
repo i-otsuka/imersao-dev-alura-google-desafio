@@ -1,7 +1,8 @@
 # imersao-dev-alura-google-desafio
-Projeto do desafio da Imersão DEV_
+Projeto do desafio da Imersão DEV_ da Alura e Google
+Proposta da imersão consistiu no desenvolvimento de um projeto com HTML, CSS e JavaScript com a ajuda do Gemini, a IA do Google.
 
-## MAMARMITA - CARDÁPIO DE PEDIDO
+## MAMARMITA - CARDÁPIO E AUTOATENDIMENTO
 
 [VISUALIZAR PÁGINA](https://i-otsuka.github.io/imersao-dev-alura-google-desafio/)
 ![capitura de telas do projeto do desafio](https://github.com/i-otsuka/imersao-dev-alura-google-desafio/blob/c02db26ed88dc7c6a082af8a699eb67ccbdc4546/captura-de-telas-do-projeto.png)
