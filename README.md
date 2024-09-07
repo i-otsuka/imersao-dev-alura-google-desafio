@@ -8,6 +8,12 @@ Projeto do desafio da Imersão DEV_ da Alura e Google
 
 O projeto consiste em um sistema de autoatendimento para uma loja de marmitas. Através de um menu interativo e um totem, os clientes personalizam seus pedidos, escolhendo o tamanho da embalagem e os ingredientes principais: carboidrato, proteína e guarnição. Após a confirmação, o sistema emite uma mensagem de agradecimento, finalizando o processo de forma intuitiva e eficiente.
   
+## TÓPICOS PASSADOS EM AULA APLICADOS NO PROJETO
+- HTML E CSS;
+- Uso do Gemini como ferramenta de pesquisa;
+- Construção de base de dados do projeto;
+- Desenvolvimento do código da ferramenta de busca.
+
 ## USOS DO GEMINI:
 - Elaborar o cardápio;
 - Construir toda base de dados do cardápio;
