@@ -1,17 +1,14 @@
 let secaoPagina = document.getElementById("cardapio__container");
 
-// Variáveis para armazenar os dados do pedido à medida que o usuário faz suas escolhas.
-let marmitaTamanho = ""; //Armazena o tamanho de marmita escolhido
-let marmitaCarboidrato = ""; //Armazena o item carboidrato
-let marmitaProteina = ""; //Armazena o item proteina
-let marmitaGuarnicao = ""; //Armazena o item guarnição
+// Definição das variaveis para armazenar pedidos
+let marmitaTamanho = "";
+let marmitaCarboidrato = "";
+let marmitaProteina = "";
+let marmitaGuarnicao = "";
 
+let printPagina = "";
+let printLista = "";
 
-let printPagina = "";// Variáveis para construção do código da página que será injetado em "cardapio__container"
-let printLista = "";// Variáveis para construção da lista de itens
-
-//INÍCIO SEÇÃO EMBALAGEM
-//Código a seguir faz o construção da página inicial (Escolha de embalagem)
 for (let marmita of marmitas) {
 
     printLista += `
@@ -28,6 +25,7 @@ for (let marmita of marmitas) {
         </div>    
     `
 }
+
 printPagina = `
 <h2>Escolha o tamanho da sua Mamarmita:</h2>
     <div class="cardapio__lista">
@@ -38,7 +36,6 @@ printPagina = `
 `
 secaoPagina.innerHTML = printPagina;
 
-//Código a seguir verifica e guarda a opção de embalagem seleciona
 function selecionaEmbalagem() {
     const radios = document.getElementsByName('embalagem_radio');
     for (let i = 0; i < radios.length; i++) {
@@ -55,8 +52,6 @@ function selecionaEmbalagem() {
     paginaCarboidrato();
 }
 
-//INÍCIO SEÇÃO CARBOIDRATOS
-//Código a seguir faz a construção da página e lista de carboidratos
 function paginaCarboidrato() {
 
     printPagina = "";
@@ -99,7 +94,6 @@ function paginaCarboidrato() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir realiza a busca de itens na lista de carboidratos
 function pesquisaCarboidrato() {
 
     let campoPesquisaCarboidrato = document.getElementById("pesquisa-carboidrato").value;
@@ -159,7 +153,6 @@ function pesquisaCarboidrato() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir verifica e guarda a opção de carboidrato seleciona
 function selecionaCarboidrato() {
     const radios = document.getElementsByName('carboidrato_radio');
     for (let i = 0; i < radios.length; i++) {
@@ -177,7 +170,7 @@ function selecionaCarboidrato() {
 }
 
 //INICIO SEÇÃO PROTEINA
-//Código a seguir faz a construção da página e lista de proteínas
+
 function paginaProteina() {
 
     printPagina = "";
@@ -220,7 +213,6 @@ function paginaProteina() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir realiza a busca de itens na lista de proteinas
 function pesquisaProteina() {
 
     let campoPesquisaProteina = document.getElementById("pesquisa-proteina").value;
@@ -280,7 +272,6 @@ function pesquisaProteina() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir verifica e guarda a opção de proteina selecionada
 function selecionaProteina() {
     const radios = document.getElementsByName('proteina_radio');
     for (let i = 0; i < radios.length; i++) {
@@ -297,8 +288,8 @@ function selecionaProteina() {
     paginaGuarnicao();
 }
 
-//INÍCIO SEÇÃO GUARNIÇÕES
-//Código a seguir faz a construção da página e lista de guarnições
+//Inicio seção Guarnição
+
 function paginaGuarnicao() {
 
     printPagina = "";
@@ -341,7 +332,6 @@ function paginaGuarnicao() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir realiza a busca de itens na lista de guarnições
 function pesquisaGuarnicao() {
 
     let campoPesquisaGuarnicao = document.getElementById("pesquisa-guarnicao").value;
@@ -376,6 +366,7 @@ function pesquisaGuarnicao() {
         }
 
     }
+
     printPagina = `
             <section class="cardapio__container">
             <h2>Guarnição</h2>
@@ -400,7 +391,6 @@ function pesquisaGuarnicao() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir verifica e guarda a opção de guarnição selecionada
 function selecionaGuarnicao() {
     const radios = document.getElementsByName('guarnicao_radio');
     for (let i = 0; i < radios.length; i++) {
@@ -417,8 +407,6 @@ function selecionaGuarnicao() {
     paginaFechaMarmita();
 }
 
-//INÍCIO SEÇÃO CONFIRMAÇÃO DE PEDIDO
-//Código a seguir constroi a página de confirmação do pedido
 function paginaFechaMarmita() {
 
     printPagina = "";
@@ -463,7 +451,6 @@ function paginaFechaMarmita() {
     secaoPagina.innerHTML = printPagina;
 }
 
-//Código a seguir constroi a página final do pedido
 function pagamento(){
 
     printPagina = "";
