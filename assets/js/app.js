@@ -29,7 +29,7 @@ for (let marmita of marmitas) {
     `
 }
 printPagina = `
-<h2>Escolha o tamanho da sua MaQmarmita:</h2>
+<h2>Escolha o tamanho da sua Marmita:</h2>
     <div class="cardapio__lista">
         ${printLista}
     </div>
@@ -468,7 +468,7 @@ function pagamento(){
 
     printPagina = "";
     printPagina = `
-    <h2>Revise sua Marmita</h2>
+    <h2>Bom apetite!</h2>
         <br>
         <br>
         <br>
