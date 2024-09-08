@@ -29,7 +29,7 @@ for (let marmita of marmitas) {
     `
 }
 printPagina = `
-<h2>Escolha o tamanho da sua Mamarmita:</h2>
+<h2>Escolha o tamanho da sua MaQmarmita:</h2>
     <div class="cardapio__lista">
         ${printLista}
     </div>
@@ -335,7 +335,7 @@ function paginaGuarnicao() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao__avancar" onclick="selecionaGuarnicao()">Fechar Mamarmita ></button>
+            <button class="botao__avancar" onclick="selecionaGuarnicao()">Fechar Marmita ></button>
         </section>
     `
     secaoPagina.innerHTML = printPagina;
@@ -390,7 +390,7 @@ function pesquisaGuarnicao() {
                 ${printLista}
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao__avancar" onclick="selecionaGuarnicao()">Fechar Mamarmita ></button>
+            <button class="botao__avancar" onclick="selecionaGuarnicao()">Fechar Marmita ></button>
         </section>
 `
     if (!printLista) {
@@ -436,7 +436,7 @@ function paginaFechaMarmita() {
     }
 
     printPagina = `
-    <h2>Revise sua Mamarmita</h2>
+    <h2>Revise sua Marmita</h2>
             <div class="pedido__container">
 
                 ${printLista}
@@ -468,7 +468,7 @@ function pagamento(){
 
     printPagina = "";
     printPagina = `
-    <h2>Revise sua Mamarmita</h2>
+    <h2>Revise sua Marmita</h2>
         <br>
         <br>
         <br>
