@@ -1,5 +1,5 @@
 # imersao-dev-alura-google-desafio
-Projeto do desafio da Imersão DEV_ da Alura e Google
+Projeto do desafio da Imersão DEV_ da Alura e Google com uso da IA Gemini.
 
 ## MAQMARMITA - CARDÁPIO E AUTOATENDIMENTO
 
