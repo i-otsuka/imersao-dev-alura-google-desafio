@@ -1,7 +1,7 @@
 # imersao-dev-alura-google-desafio
 Projeto do desafio da Imersão DEV_ da Alura e Google
 
-## MAMARMITA - CARDÁPIO E AUTOATENDIMENTO
+## MAQMARMITA - CARDÁPIO E AUTOATENDIMENTO
 
 [VISUALIZAR PÁGINA](https://i-otsuka.github.io/imersao-dev-alura-google-desafio/)
 ![capitura de telas do projeto do desafio](https://github.com/i-otsuka/imersao-dev-alura-google-desafio/blob/330b89889419d001b8adc80398946f24c5002ed5/captura-de-telas-do-projeto-2.png)
