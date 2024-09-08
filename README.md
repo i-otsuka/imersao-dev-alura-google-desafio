@@ -11,7 +11,8 @@ O projeto consiste em um sistema de autoatendimento para uma loja de marmitas. A
   
 ## TÓPICOS PASSADOS EM AULA APLICADOS NO PROJETO
 - HTML E CSS;
-- Uso do Gemini como ferramenta de pesquisa;
+- Integração do HTML com JavaScript e manipulação dos códigos;
+- Uso do Gemini como ferramenta de pesquisa e aprendizado;
 - Construção de base de dados do projeto;
 - Desenvolvimento do código da ferramenta de busca.
 
