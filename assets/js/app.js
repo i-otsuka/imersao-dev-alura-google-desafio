@@ -1,19 +1,23 @@
+//Projeto Desafio Imersão DEV Alura e Google com IA Gemini
+//Autor: Isac R. Otsuka
+//Ano: 2024
+
 let secaoPagina = document.getElementById("cardapio__container");
 
-// Variáveis para armazenar os dados do pedido à medida que o usuário faz suas escolhas.
+// Definição e reset das variáveis para armazenar os dados do pedido à medida que o usuário faz suas escolhas.
 let marmitaTamanho = ""; //Armazena o tamanho de marmita escolhido
 let marmitaCarboidrato = ""; //Armazena o item carboidrato
 let marmitaProteina = ""; //Armazena o item proteina
 let marmitaGuarnicao = ""; //Armazena o item guarnição
 
-
+// Definição e reset das variáveis para armazenar a cosntrução dos itens da página
 let printPagina = "";// Variáveis para construção do código da página que será injetado em "cardapio__container"
 let printLista = "";// Variáveis para construção da lista de itens
 
 //INÍCIO SEÇÃO EMBALAGEM
 //Código a seguir faz o construção da página inicial (Escolha de embalagem)
+//Código a seguir constrói a lista de itens inserindo os dados de cada objeto
 for (let marmita of marmitas) {
-
     printLista += `
         <div class="cardapio__item">
             <input type="radio" name="embalagem_radio" id="${marmita.marmitaId}" value="${marmita.marmitaEmbalagem}">
@@ -28,6 +32,7 @@ for (let marmita of marmitas) {
         </div>    
     `
 }
+//Código a seguir constroi a código html do pedido e insere na página
 printPagina = `
 <h2>Escolha o tamanho da sua Marmita:</h2>
     <div class="cardapio__lista">
@@ -52,7 +57,7 @@ function selecionaEmbalagem() {
         alert("Selecione uma tamanho de embalagem.")
         return
     }
-    paginaCarboidrato();
+    paginaCarboidrato();//função chama e imprime a próxima página a lista com todos os itens da categoria
 }
 
 //INÍCIO SEÇÃO CARBOIDRATOS
@@ -61,7 +66,7 @@ function paginaCarboidrato() {
 
     printPagina = "";
     printLista = "";
-
+    //Código a seguir constrói a lista de itens inserindo os dados de cada objeto
     for (let carboidrato of carboidratos) {
 
         printLista += `
@@ -78,7 +83,7 @@ function paginaCarboidrato() {
                 </div> 
     `
     }
-
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
             <section class="cardapio__container">
             <h2>Carboidratos</h2>
@@ -107,11 +112,11 @@ function pesquisaCarboidrato() {
 
     if ((!pesquisaCarboidrato) || (pesquisaCarboidrato == " ") || (pesquisaCarboidrato == "  ")) {
         alert("Nada encontrado.")
-        paginaCarboidrato()
+        paginaCarboidrato()//redesenha a lista com todos os itens da categoria
         return
     }
-    printPagina = "";
-    printLista = "";
+    printPagina = ""; //Reset do valor da variável
+    printLista = ""; //Reset do valor da variável
 
     for (let carboidrato of carboidratos) {
         let carboidratoTipo = carboidrato.tipo.toLocaleLowerCase();
@@ -134,7 +139,7 @@ function pesquisaCarboidrato() {
         }
 
     }
-
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
     <section class="cardapio__container">
     <h2>Carboidratos</h2>
@@ -154,7 +159,7 @@ function pesquisaCarboidrato() {
 `
     if (!printLista) {
         alert("Nada encontrado.")
-        paginaCarboidrato()
+        paginaCarboidrato()//redesenha a lista com todos os itens da categoria
     }
     secaoPagina.innerHTML = printPagina;
 }
@@ -173,16 +178,16 @@ function selecionaCarboidrato() {
         alert("Selecione um carboidrato.")
         return
     }
-    paginaProteina();
+    paginaProteina();//função chama e imprime a próxima página a lista com todos os itens da categoria
 }
 
 //INICIO SEÇÃO PROTEINA
 //Código a seguir faz a construção da página e lista de proteínas
 function paginaProteina() {
 
-    printPagina = "";
-    printLista = "";
-
+    printPagina = ""; //Reset do valor da variável
+    printLista = ""; //Reset do valor da variável
+    //Código a seguir constrói a lista de itens inserindo os dados de cada objeto
     for (let proteina of proteinas) {
 
         printLista += `
@@ -199,7 +204,7 @@ function paginaProteina() {
                 </div> 
     `
     }
-
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
             <section class="cardapio__container">
             <h2>Proteinas</h2>
@@ -228,12 +233,12 @@ function pesquisaProteina() {
 
     if ((!pesquisaProteina) || (pesquisaProteina == " ") || (pesquisaProteina == "  ")) {
         alert("Nada encontrado.")
-        paginaProteina()
+        paginaProteina()//redesenha a lista com todos os itens da categoria
         return
     }
-    printPagina = "";
-    printLista = "";
-
+    printPagina = ""; //Reset do valor da variável
+    printLista = ""; //Reset do valor da variável
+    //Código a seguir constrói a lista de itens inserindo os dados de cada objeto
     for (let proteina of proteinas) {
         let proteinaTipo = proteina.tipo.toLocaleLowerCase();
         let proteinaIngrediente = proteina.ingredientes.toLocaleLowerCase();
@@ -255,7 +260,7 @@ function pesquisaProteina() {
         }
 
     }
-
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
             <section class="cardapio__container">
             <h2>Proteinas</h2>
@@ -275,7 +280,7 @@ function pesquisaProteina() {
 `
     if (!printLista) {
         alert("Nada encontrado.")
-        paginaProteina()
+        paginaProteina()//redesenha a lista com todos os itens da categoria
     }
     secaoPagina.innerHTML = printPagina;
 }
@@ -294,16 +299,16 @@ function selecionaProteina() {
         alert("Selecione uma proteína.")
         return
     }
-    paginaGuarnicao();
+    paginaGuarnicao();//função chama e imprime a próxima página a lista com todos os itens da categoria
 }
 
 //INÍCIO SEÇÃO GUARNIÇÕES
 //Código a seguir faz a construção da página e lista de guarnições
 function paginaGuarnicao() {
 
-    printPagina = "";
-    printLista = "";
-
+    printPagina = ""; //Reset do valor da variável
+    printLista = ""; //Reset do valor da variável
+    //Código a seguir constrói a lista de itens inserindo os dados de cada objeto
     for (let guarnicao of guarnicoes) {
 
         printLista += `
@@ -320,7 +325,7 @@ function paginaGuarnicao() {
                 </div> 
     `
     }
-
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
             <section class="cardapio__container">
             <h2>Guarnição</h2>
@@ -349,12 +354,12 @@ function pesquisaGuarnicao() {
 
     if ((!pesquisaGuarnicao) || (pesquisaGuarnicao == " ") || (pesquisaGuarnicao == "  ")) {
         alert("Nada encontrado.")
-        paginaGuarnicao()
+        paginaGuarnicao()//redesenha a lista com todos os itens da categoria
         return
     }
-    printPagina = "";
-    printLista = "";
-
+    printPagina = ""; //Reset do valor da variável
+    printLista = ""; //Reset do valor da variável
+    //Código a seguir constroi a lista de itens
     for (let guarnicao of guarnicoes) {
         let guarnicaoTipo = guarnicao.tipo.toLocaleLowerCase();
         let guarnicaoIngrediente = guarnicao.ingredientes.toLocaleLowerCase();
@@ -376,6 +381,7 @@ function pesquisaGuarnicao() {
         }
 
     }
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
             <section class="cardapio__container">
             <h2>Guarnição</h2>
@@ -395,7 +401,7 @@ function pesquisaGuarnicao() {
 `
     if (!printLista) {
         alert("Nada encontrado.")
-        paginaGuarnicao()
+        paginaGuarnicao() //redesenha a lista com todos os itens da categoria
     }
     secaoPagina.innerHTML = printPagina;
 }
@@ -414,16 +420,16 @@ function selecionaGuarnicao() {
         alert("Selecione uma guarnição.")
         return
     }
-    paginaFechaMarmita();
+    paginaFechaMarmita(); //Chama função chama e imprime a página de revisão do pedido
 }
 
 //INÍCIO SEÇÃO CONFIRMAÇÃO DE PEDIDO
 //Código a seguir constroi a página de confirmação do pedido
 function paginaFechaMarmita() {
 
-    printPagina = "";
-    printLista = "";
-
+    printPagina = ""; //Reset do valor da variável
+    printLista = ""; //Reset do valor da variável
+    //Código a seguir verifica o tamanho da embalagem e preenche o trecho html com as demais informações (peso e valor)
     for(marmita of marmitas){
         if(marmitaTamanho == marmita.marmitaEmbalagem){
             printLista=`
@@ -434,7 +440,7 @@ function paginaFechaMarmita() {
             `
         }
     }
-
+    //Código a seguir constroi a código html do pedido e insere na página
     printPagina = `
     <h2>Revise sua Marmita</h2>
             <div class="pedido__container">
@@ -458,7 +464,7 @@ function paginaFechaMarmita() {
             </div>
             </div>
             <!-- Botão avançar para proximo item-->
-            <button class="botao__avancar" onclick="pagamento()">Ir para pagamento ></button>
+            <button class="botao__avancar" onclick="pagamento()">Confirmar Pedido ></button>
     `;
     secaoPagina.innerHTML = printPagina;
 }
@@ -466,7 +472,7 @@ function paginaFechaMarmita() {
 //Código a seguir constroi a página final do pedido
 function pagamento(){
 
-    printPagina = "";
+    printPagina = ""; //Reset do valor da variável
     printPagina = `
     <h2>Bom apetite!</h2>
         <br>

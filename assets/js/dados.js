@@ -1,3 +1,9 @@
+//Projeto Desafio Imersão DEV Alura e Google com IA Gemini
+//Autor: Isac R. Otsuka
+//Ano: 2024
+
+//Base de dados MaQMarmita
+//Base de dados com dados dos tamanhos de embalagens
 const marmitas = [
   {
     marmitaEmbalagem:"Embalagem P",
@@ -19,6 +25,7 @@ const marmitas = [
   }
 ];
 
+//Base de dados com a lista de itens da categoria carboidatos
 const carboidratos = [
   {
     tipo: "Arroz branco cozido",
@@ -111,6 +118,7 @@ const carboidratos = [
   }
 ];
 
+//Base de dados com a lista de itens da categoria proteínas
 const proteinas = [
   {
     tipo: "Bife de carne bovina grelhado",
@@ -204,6 +212,7 @@ const proteinas = [
   }
 ];
 
+//Base de dados com a lista de itens da categoria guarnições
 const guarnicoes = [
   {
     tipo: "Salada verde com tomate e cebola",
