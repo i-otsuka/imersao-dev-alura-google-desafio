@@ -1,0 +1,91 @@
+PROMPT:
+Com funciona o input radio e como posso integrar um código javaScript?
+
+RESPOSTA:
+## Como Funciona o Input Radio e Integração com JavaScript
+
+**O que é um Input Radio?**
+
+O input radio é um elemento HTML utilizado para permitir que o usuário selecione apenas uma opção dentre várias. Ele é representado por um pequeno círculo que pode ser marcado ou não. 
+
+**Como funciona:**
+
+* **Grupo de opções:** Para que os inputs radio funcionem corretamente, eles precisam pertencer ao mesmo grupo. Isso é definido através do atributo `name`. Todos os radios com o mesmo `name` formam um grupo.
+* **Seleção única:** Ao selecionar um radio de um grupo, os outros radios desse mesmo grupo são automaticamente desmarcados.
+* **Valor:** Cada radio possui um valor definido pelo atributo `value`. Esse valor é enviado ao servidor quando o formulário é submetido.
+
+**Exemplo básico:**
+
+```html
+<form>
+  <input type="radio" name="fruta" value="maçã"> Maçã
+  <input type="radio" name="fruta" value="banana"> Banana
+  <input type="radio" name="fruta" value="laranja"> Laranja
+</form>
+```
+
+**Integrando JavaScript com Input Radio**
+
+JavaScript pode ser utilizado para manipular e interagir com os inputs radio de diversas maneiras:
+
+* **Obtendo o valor selecionado:**
+  ```javascript
+  function obterValorSelecionado() {
+    const radios = document.getElementsByName('fruta');
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        console.log(radios[i].value); // Imprime o valor do radio selecionado
+        break;
+      }
+    }
+  }
+  ```
+
+* **Verificando se um radio está selecionado:**
+  ```javascript
+  function estaSelecionado(radio) {
+    return radio.checked;
+  }
+  ```
+
+* **Alterando o valor de um radio:**
+  ```javascript
+  function marcarRadio(valor) {
+    const radios = document.getElementsByName('fruta');
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].value === valor) {
+        radios[i].checked = true;
+        break;
+      }
+    }
+  }
+  ```
+
+* **Adicionando eventos:**
+  ```javascript
+  const radio = document.getElementById('meuRadio');
+  radio.addEventListener('change', function() {
+    // Código a ser executado quando o radio é selecionado
+    console.log('Radio selecionado!');
+  });
+  ```
+
+**Aplicações Práticas:**
+
+* **Formulários:** Para coletar informações do usuário de forma simples e intuitiva.
+* **Quizzes:** Para permitir que o usuário escolha apenas uma resposta por pergunta.
+* **Configurações:** Para permitir que o usuário escolha entre diferentes opções.
+
+**Considerações Adicionais:**
+
+* **Acessibilidade:** Certifique-se de que os labels estão associados aos inputs radio para facilitar a navegação por teclado e para usuários de leitores de tela.
+* **Validação:** Utilize JavaScript para validar os dados do formulário antes de enviá-los para o servidor.
+
+**Recursos Adicionais:**
+
+* **DevFuria:** [https://devfuria.com.br/javascript/manipulando-radios-buttons-com-javascript/](https://devfuria.com.br/javascript/manipulando-radios-buttons-com-javascript/)
+* **Stack Overflow:** [URL inválido removido]
+
+**Com este guia, você terá uma base sólida para trabalhar com inputs radio e integrá-los em seus projetos JavaScript.**
+
+**Gostaria de ver um exemplo mais específico?** Por exemplo, como criar um quiz simples usando inputs radio e JavaScript? 

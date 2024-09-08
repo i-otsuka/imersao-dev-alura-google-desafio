@@ -27,6 +27,9 @@ Como estratégia, busquei manter os nomes dos itens visiveis e utilizar o campo 
 - O maior desafio foi como desenhar a lista onde fosse possivel marcar o item selecionado. Com a ajuda do Gemini pude me aprofundar em como utilizar o input:radio e como obter os valores da opção selecionada;
 - Em seguida parti para o código JavaScript e finalização do código. A parte trabalhosa foi trocar as variaveis em cada código.
 - Acredito que haja formas de reduzir ainda mais o código mas precise de recursos mais avançados.
+
+### PROMPTS
+Anexo compartilho alguns prompts utilizados no processo de criação.
   
 ## TÓPICOS PASSADOS EM AULA APLICADOS NO PROJETO
 - HTML E CSS;
