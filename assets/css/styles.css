@@ -31,10 +31,10 @@ body{
     min-height: 100vh;
     font-family: var(--fnt-corpo);
     font-weight: 400;
-    /* background-image: url(../imagens/bg-amarelo-comidas.png);
+    background-image: url(../imagens/bg-01-foods.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     background-color: var(--color-gray3);
     
 }
