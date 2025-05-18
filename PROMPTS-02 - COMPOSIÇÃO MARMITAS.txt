@@ -1,0 +1,241 @@
+COMPOSIÇÃO MARMITAS
+
+---
+
+PROMPT
+
+Estou criando um cardápio e preciso fazer uma distribuição das categorias de itens que compões uma refeição.
+
+Tenho os seguintes categorias de itens:
+- carboidratos
+- grãos e leguminosas
+- proteínas
+- guarnições 
+- salada
+
+Faça uma distribuição média em porcentagem. Fornecer um valor único em cada item. Importante a soma das porcentagens ser igual a 100%. 
+
+---
+
+RESULTADO
+Distribuição Média em Porcentagem para as Categorias de um Cardápio
+Entendendo a Demanda:
+
+Você busca uma distribuição ideal de categorias em um cardápio, garantindo que cada componente de uma refeição esteja presente em quantidades equilibradas.
+
+Proposta de Distribuição:
+
+A distribuição ideal pode variar dependendo de fatores como público-alvo, tipo de estabelecimento e objetivos nutricionais. No entanto, uma sugestão geral, considerando uma abordagem equilibrada e nutritiva, seria a seguinte:
+
+Carboidratos: 35%
+Fonte principal de energia para o corpo, presentes em alimentos como arroz, pão, massas e tubérculos.
+Grãos e Leguminosas: 20%
+Ótima fonte de fibras, proteínas e outros nutrientes essenciais, como feijão, lentilha, quinoa e grão de bico.
+Proteínas: 25%
+Essenciais para a construção e reparação dos tecidos, encontradas em carnes, peixes, ovos, leguminosas e derivados de leite.
+Guarnições: 10%
+Complementam o prato, adicionando sabor e variedade, como legumes cozidos, purê de batata e molhos.
+Salada: 10%
+Fonte de vitaminas, minerais e fibras, contribuindo para uma alimentação saudável e equilibrada.
+Por que essa distribuição?
+
+Carboidratos: Fornecem a energia necessária para as atividades diárias.
+Grãos e Leguminosas: Aumentam o teor de fibras, auxiliando na digestão e promovendo a saciedade.
+Proteínas: Essenciais para o crescimento e reparo dos tecidos, além de contribuírem para a sensação de saciedade.
+Guarnições e Salada: Adicionam nutrientes e sabor à refeição, tornando-a mais completa e atrativa.
+Importante:
+
+Flexibilidade: Essa distribuição é uma sugestão e pode ser adaptada de acordo com as necessidades específicas do seu cardápio.
+Público-alvo: Considere as preferências e necessidades nutricionais do seu público-alvo.
+Tipo de estabelecimento: Um restaurante vegetariano, por exemplo, pode ter uma proporção maior de grãos e leguminosas.
+Objetivos nutricionais: Se o objetivo for aumentar o consumo de fibras, por exemplo, pode-se aumentar a proporção de grãos e leguminosas.
+Exemplo Prático:
+
+Em um prato, você poderia ter:
+
+35% de arroz integral (carboidrato)
+20% de feijão preto (grãos e leguminosas)
+25% de frango grelhado (proteína)
+10% de brócolis cozido no vapor (guarnição)
+10% de salada verde com tomate e azeite (salada)
+Observações:
+
+Porções: A quantidade de cada alimento deve ser ajustada de acordo com as necessidades individuais e as recomendações nutricionais.
+Variedade: É importante oferecer uma variedade de alimentos dentro de cada categoria para garantir um aporte nutricional adequado e evitar a monotonia.
+Sazonalidade: Utilize ingredientes da estação para garantir maior frescor e sabor.
+Considerações Adicionais:
+
+Densidade energética: Priorize alimentos com alta densidade nutricional, ou seja, aqueles que fornecem muitos nutrientes em poucas calorias.
+Processamento: Opte por alimentos minimamente processados e evite aqueles com alto teor de açúcar, gordura saturada e sódio.
+Equilíbrio: A alimentação equilibrada é a chave para uma boa saúde. Varie os alimentos e aproveite os diferentes sabores e texturas.
+Lembre-se:
+
+Ao criar um cardápio, é fundamental buscar o auxílio de um nutricionista para garantir que as necessidades nutricionais do seu público-alvo sejam atendidas.
+
+---
+
+EMBALAGENS:
+
+PROMPT
+Estou calculando a quantidade de cada item que irá compor o peso de 3 tamanhos de marmitas.
+Tenho as seguintes categorias e a porcentagem correspondente de uma refeição.
+Carboidratos: 35%
+Grãos e Leguminosas: 20%
+Proteínas: 25%
+Guarnições: 10%
+Salada: 10%
+
+Calcule o peso em gramas de cada item em refeições com os seguintes pesos: 450g, 600g e 750g.
+
+--- 
+
+RESULTADO:
+
+## Calculando o Peso de Cada Item nas Marmitas
+
+**Entendendo o Problema:**
+* Temos uma refeição dividida em 5 categorias com suas respectivas porcentagens.
+* Queremos saber o peso em gramas de cada categoria para 3 tamanhos de marmitas.
+
+**Solução:**
+
+Para cada tamanho de marmita, vamos calcular o peso em gramas de cada categoria multiplicando o peso total da marmita pela porcentagem correspondente da categoria.
+
+**Cálculos:**
+
+**Marmita de 450g:**
+
+* **Carboidratos:** 450g * 35% = 157,5g
+* **Grãos e Leguminosas:** 450g * 20% = 90g
+* **Proteínas:** 450g * 25% = 112,5g
+* **Guarnições:** 450g * 10% = 45g
+* **Salada:** 450g * 10% = 45g
+
+**Marmita de 600g:**
+
+* **Carboidratos:** 600g * 35% = 210g
+* **Grãos e Leguminosas:** 600g * 20% = 120g
+* **Proteínas:** 600g * 25% = 150g
+* **Guarnições:** 600g * 10% = 60g
+* **Salada:** 600g * 10% = 60g
+
+**Marmita de 750g:**
+
+* **Carboidratos:** 750g * 35% = 262,5g
+* **Grãos e Leguminosas:** 750g * 20% = 150g
+* **Proteínas:** 750g * 25% = 187,5g
+* **Guarnições:** 750g * 10% = 75g
+* **Salada:** 750g * 10% = 75g
+
+**Tabela Resumida:**
+
+| Categoria        | Marmita 450g | Marmita 600g | Marmita 750g |
+|-----------------|--------------|--------------|--------------|
+| Carboidratos    | 157,5g        | 210g         | 262,5g        |
+| Grãos e Leguminosas | 90g          | 120g         | 150g         |
+| Proteínas       | 112,5g        | 150g         | 187,5g        |
+| Guarnições      | 45g          | 60g          | 75g          |
+| Salada          | 45g          | 60g          | 75g          |
+
+**Observação:**
+
+* **Flexibilidade:** É importante ressaltar que esses valores são uma estimativa e podem ser ajustados de acordo com as preferências e necessidades nutricionais individuais.
+* **Peso dos Alimentos:** Ao pesar os alimentos, considere o peso líquido (sem embalagem).
+* **Densidade dos Alimentos:** Lembre-se que a densidade dos alimentos varia, então um mesmo peso de diferentes alimentos pode ocupar volumes diferentes.
+
+**Exemplo Prático:**
+
+Se você precisa preparar uma marmita de 600g e escolheu frango como proteína, arroz como carboidrato e feijão como grão, você pesaria aproximadamente 150g de frango, 210g de arroz e 120g de feijão.
+
+**Dica:**
+
+Para facilitar o cálculo e a organização, você pode utilizar planilhas eletrônicas ou aplicativos de nutrição.
+
+**Gostaria de calcular os valores para outros tamanhos de marmitas ou ajustar as porcentagens de acordo com suas necessidades?**
+
+---
+
+PROMPT 2
+
+a partir da Tabela Resumida, crie uma lista de objetos JavaScript com as variáveis:
+- pesoCarboidrato;
+- pesoGraoLeguminosa;
+- pesoProteina;
+- pesoGuarnicao;
+- pesoSalada.
+para cada peso de marmita(450g, 600g e 750g)
+
+---
+
+RESULTADO
+
+## Criando Objetos JavaScript a partir da Tabela Resumida
+
+**Entendendo o Problema:**
+
+Queremos transformar os dados da tabela em objetos JavaScript, onde cada objeto representará uma marmita com suas respectivas quantidades de cada alimento.
+
+**Solução:**
+
+Podemos criar um array de objetos, onde cada objeto terá as propriedades correspondentes aos pesos dos alimentos.
+
+```javascript
+const marmitas = [
+  {
+    peso: 450,
+    pesoCarboidrato: 157.5,
+    pesoGraoLeguminosa: 90,
+    pesoProteina: 112.5,
+    pesoGuarnicao: 45,
+    pesoSalada: 45
+  },
+  {
+    peso: 600,
+    pesoCarboidrato: 210,
+    pesoGraoLeguminosa: 120,
+    pesoProteina: 150,
+    pesoGuarnicao: 60,
+    pesoSalada: 60
+  },
+  {
+    peso: 750,
+    pesoCarboidrato: 262.5,
+    pesoGraoLeguminosa: 150,
+    pesoProteina: 187.5,
+    pesoGuarnicao: 75,
+    pesoSalada: 75
+  }
+];
+```
+
+**Explicação:**
+
+* **Array `marmitas`:** Cria um array para armazenar os objetos que representam as marmitas.
+* **Objetos:** Cada objeto dentro do array representa uma marmita. As propriedades de cada objeto correspondem aos pesos de cada alimento, conforme a tabela.
+* **Propriedades:**
+  * `peso`: Indica o peso total da marmita.
+  * `pesoCarboidrato`, `pesoGraoLeguminosa`, `pesoProteina`, `pesoGuarnicao`, `pesoSalada`: Indicam o peso de cada categoria de alimento naquela marmita.
+
+**Utilizando os Objetos:**
+
+Com essa estrutura, você pode acessar os dados de cada marmita facilmente. Por exemplo, para acessar o peso de carboidratos na marmita de 600g:
+
+```javascript
+const marmita600g = marmitas[1]; // Acessa o segundo objeto (índice 1)
+console.log(marmita600g.pesoCarboidrato); // Imprime 210
+```
+
+**Extensões Possíveis:**
+
+* **Adicionar mais informações:** Você pode adicionar mais propriedades aos objetos, como o tipo de proteína, carboidrato ou grão utilizado.
+* **Criar funções:** Pode criar funções para realizar cálculos ou manipular os dados dos objetos. Por exemplo, uma função para calcular a porcentagem de cada alimento em uma marmita.
+* **Utilizar em um aplicativo:** Essa estrutura de dados pode ser utilizada em um aplicativo web ou mobile para calcular automaticamente a quantidade de alimentos para diferentes tamanhos de marmitas.
+
+**Benefícios:**
+
+* **Organização:** Agrupa os dados de forma clara e concisa.
+* **Reutilização:** Os dados podem ser reutilizados em diferentes partes do seu código.
+* **Flexibilidade:** Permite adicionar ou remover propriedades conforme necessário.
+
+Com essa estrutura, você terá uma base sólida para trabalhar com os dados das suas marmitas e realizar diversas análises e cálculos.
+
